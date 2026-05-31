@@ -1,6 +1,10 @@
-# 班级德育学分座次选择系统后端
+# seat\_choice
 
-完整部署说明见 `DEPLOYMENT.md`。
+基于德育学分（或其它任何可以用于排名依据的量化数据）排名的智能选座平台 ，用于中小学班级管理场景，解决传统手动排座的效率问题。完整部署说明见 `DEPLOYMENT.md`。
+
+<br />
+
+<br />
 
 基于 `FastAPI + SQLAlchemy + SQLite` 的后端服务，覆盖以下核心能力：
 
@@ -47,8 +51,8 @@ uvicorn app.main:app --reload
 
 默认访问地址：
 
-- Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-- OpenAPI JSON: [http://127.0.0.1:8000/openapi.json](http://127.0.0.1:8000/openapi.json)
+- Swagger UI: <http://127.0.0.1:8000/docs>
+- OpenAPI JSON: <http://127.0.0.1:8000/openapi.json>
 
 ## 2. Swagger 使用说明
 
@@ -117,3 +121,7 @@ GET /admin/rounds/{round_id}/export
 - 开发数据库默认使用 SQLite
 - ORM 使用 SQLAlchemy，后续可替换为 PostgreSQL
 - 所有请求/响应模型都会自动出现在 `/docs` 和 `/openapi.json`
+  \=======
+
+#
+
